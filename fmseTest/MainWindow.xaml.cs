@@ -80,9 +80,51 @@ namespace fmseTest
             buttonClickInit(StaffButton);
         }
 
-        private void AwardsButton_MouseEnter(object sender, RoutedEventArgs e)
+        private void AwardsButton_MouseEnter(object sender, MouseEventArgs e)
         {
             buttonHoverInit(AwardsButton);
+        }
+
+        private void NationsButton_MouseEnter(object sender, MouseEventArgs e)
+        {
+            buttonHoverInit(NationsButton);
+        }
+
+        private void CitiesButton_MouseEnter(object sender, MouseEventArgs e)
+        {
+            buttonHoverInit(CitiesButton);
+        }
+
+        private void ClubsButton_MouseEnter(object sender, MouseEventArgs e)
+        {
+            buttonHoverInit(ClubsButton);
+        }
+
+        private void PlayersButton_MouseEnter(object sender, MouseEventArgs e)
+        {
+            buttonHoverInit(PlayersButton);
+        }
+
+        private void StaffButton_MouseEnter(object sender, MouseEventArgs e)
+        {
+            buttonHoverInit(StaffButton);
+        }
+
+
+        private void AwardsButton_MouseLeave(object sender, MouseEventArgs e)
+        {
+            buttonLeavesInit(AwardsButton);
+        }
+
+        private void buttonHoverInit(Button clickedButton)
+        {
+            clickedButton.Foreground = new SolidColorBrush(mouseOverlay);
+        }
+
+        private void buttonLeavesInit(Button clickedButton)
+        {
+            clickedButton.Foreground = new SolidColorBrush(Colors.Black);
+
         }
 
 
@@ -90,17 +132,10 @@ namespace fmseTest
         {
             foreach (Button button in myButtons)
             {
-                button.BorderThickness = new Thickness(0,0, 0, 0);
+                button.BorderThickness = new Thickness(0, 0, 0, 0);
             }
 
             clickedButton.BorderThickness = new Thickness(2, 2, 2, 0);
-        }
-
-        private void buttonHoverInit(Button clickedButton)
-        {
-
-
-            clickedButton.Foreground = new SolidColorBrush(mouseOverlay);
         }
 
     }
