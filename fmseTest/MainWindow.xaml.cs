@@ -20,6 +20,8 @@ namespace fmseTest
     {
         private List<Button> myButtons;
 
+        Color mouseOverlay = (Color)ColorConverter.ConvertFromString("#6dc3ff");
+
         public MainWindow()
         {
             InitializeComponent();
@@ -44,49 +46,61 @@ namespace fmseTest
 
         private void AwardsButton_Click(object sender, RoutedEventArgs e)
         {
-            buttonInit(AwardsButton);
+            buttonClickInit(AwardsButton);
         }
 
         private void NationsButton_Click(object sender, RoutedEventArgs e)
         {
-            buttonInit(NationsButton);
+            buttonClickInit(NationsButton);
         }
 
         private void CitiesButton_Click(object sender, RoutedEventArgs e)
         {
-            buttonInit(CitiesButton);
+            buttonClickInit(CitiesButton);
         }
 
         private void ClubsButton_Click(object sender, RoutedEventArgs e)
         {
 
-            buttonInit(ClubsButton);
+            buttonClickInit(ClubsButton);
         }
 
         private void CompetitionsButton_Click(object sender, RoutedEventArgs e)
         {
-            buttonInit(CompetitionsButton);
+            buttonClickInit(CompetitionsButton);
         }
 
         private void PlayersButton_Click(object sender, RoutedEventArgs e)
         {
-            buttonInit(PlayersButton);
+            buttonClickInit(PlayersButton);
         }
 
         private void StaffButton_Click(object sender, RoutedEventArgs e)
         {
-            buttonInit(StaffButton);
+            buttonClickInit(StaffButton);
+        }
+
+        private void AwardsButton_MouseEnter(object sender, RoutedEventArgs e)
+        {
+            buttonHoverInit(AwardsButton);
         }
 
 
-        private void buttonInit(Button clickedButton)
+        private void buttonClickInit(Button clickedButton)
         {
             foreach (Button button in myButtons)
             {
                 button.BorderThickness = new Thickness(0,0, 0, 0);
             }
 
-            clickedButton.BorderThickness = new Thickness(1, 1, 1, 0);
+            clickedButton.BorderThickness = new Thickness(2, 2, 2, 0);
+        }
+
+        private void buttonHoverInit(Button clickedButton)
+        {
+
+
+            clickedButton.Foreground = new SolidColorBrush(mouseOverlay);
         }
 
     }

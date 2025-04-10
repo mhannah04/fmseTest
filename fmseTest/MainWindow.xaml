@@ -20,13 +20,13 @@
         <Border Grid.Row="0" Background="#ffffff" Padding="0,0,0,0">
             <StackPanel Orientation="Horizontal">
                 <Button x:Name="FileButton" Click="FileButton_Click" Content="File" HorizontalAlignment="Left" Width="40" Background="#00753b" Foreground="#ffffff"/>
-                <Button x:Name="AwardsButton" Click="AwardsButton_Click" Content="Awards" HorizontalAlignment="Left" Width="60" Background="#ffffff" Foreground="#000000" BorderThickness="0,0,0,0"/>
-                <Button x:Name="NationsButton" Click="NationsButton_Click" Content="Nations" HorizontalAlignment="Left" Width="60" Background="#ffffff" Foreground="#000000" BorderThickness="0,0,0,0"/>
-                <Button x:Name="CitiesButton" Click="CitiesButton_Click" Content="Cities" HorizontalAlignment="Left" Width="60" Background="#ffffff" Foreground="#000000" BorderThickness="0,0,0,0"/>
-                <Button x:Name="ClubsButton" Click="ClubsButton_Click" Content="Clubs" HorizontalAlignment="Left" Width="60" Background="#ffffff" Foreground="#000000" BorderThickness="0,0,0,0"/>
-                <Button x:Name="CompetitionsButton" Click="CompetitionsButton_Click" Content="Competitions" HorizontalAlignment="Left" Width="80" Background="#ffffff" Foreground="#000000" BorderThickness="0,0,0,0"/>
-                <Button x:Name="PlayersButton" Click="PlayersButton_Click" Content="Players" HorizontalAlignment="Left" Width="60" Background="#ffffff" Foreground="#000000" BorderThickness="0,0,0,0"/>
-                <Button x:Name="StaffButton" Click="StaffButton_Click" Content="Staff" HorizontalAlignment="Left" Width="60" Background="#ffffff" Foreground="#000000" BorderThickness="0,0,0,0"/>
+                <Button x:Name="AwardsButton" Click="AwardsButton_Click" Content="Awards" HorizontalAlignment="Left" Width="60" Background="#ffffff" Foreground="#000000" BorderThickness="0,0,0,0" BorderBrush="#e0e0e0" MouseEnter="AwardsButton_MouseEnter"/>
+                <Button x:Name="NationsButton" Click="NationsButton_Click" Content="Nations" HorizontalAlignment="Left" Width="60" Background="#ffffff" Foreground="#000000" BorderThickness="0,0,0,0" BorderBrush="#e0e0e0"/>
+                <Button x:Name="CitiesButton" Click="CitiesButton_Click" Content="Cities" HorizontalAlignment="Left" Width="60" Background="#ffffff" Foreground="#000000" BorderThickness="0,0,0,0" BorderBrush="#e0e0e0"/>
+                <Button x:Name="ClubsButton" Click="ClubsButton_Click" Content="Clubs" HorizontalAlignment="Left" Width="60" Background="#ffffff" Foreground="#000000" BorderThickness="0,0,0,0" BorderBrush="#e0e0e0"/>
+                <Button x:Name="CompetitionsButton" Click="CompetitionsButton_Click" Content="Competitions" HorizontalAlignment="Left" Width="80" Background="#ffffff" Foreground="#000000" BorderThickness="0,0,0,0" BorderBrush="#e0e0e0"/>
+                <Button x:Name="PlayersButton" Click="PlayersButton_Click" Content="Players" HorizontalAlignment="Left" Width="60" Background="#ffffff" Foreground="#000000" BorderThickness="0,0,0,0" BorderBrush="#e0e0e0"/>
+                <Button x:Name="StaffButton" Click="StaffButton_Click" Content="Staff" HorizontalAlignment="Left" Width="60" Background="#ffffff" Foreground="#000000" BorderThickness="0,0,0,0" BorderBrush="#e0e0e0"/>
 
 
 
