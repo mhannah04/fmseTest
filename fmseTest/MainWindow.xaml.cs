@@ -37,6 +37,8 @@ namespace fmseTest
                 StaffButton
 
             };
+
+
         }
 
         private void FileButton_Click(object sender, RoutedEventArgs e)
@@ -44,110 +46,28 @@ namespace fmseTest
             //MessageBox.Show("Button pressed successfully");
         }
 
-        private void AwardsButton_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            buttonClickInit(AwardsButton);
+            if (sender is Button button)
+            {
+                buttonClickInit(button);
+            }
         }
 
-        private void NationsButton_Click(object sender, RoutedEventArgs e)
+        private void MouseEnter(object sender, RoutedEventArgs e)
         {
-            buttonClickInit(NationsButton);
+            if (sender is Button button)
+            {
+                buttonHoverInit(button);
+            }
         }
 
-        private void CitiesButton_Click(object sender, RoutedEventArgs e)
+        private void MouseLeave(object sender, RoutedEventArgs e)
         {
-            buttonClickInit(CitiesButton);
-        }
-
-        private void ClubsButton_Click(object sender, RoutedEventArgs e)
-        {
-
-            buttonClickInit(ClubsButton);
-        }
-
-        private void CompetitionsButton_Click(object sender, RoutedEventArgs e)
-        {
-            buttonClickInit(CompetitionsButton);
-        }
-
-        private void PlayersButton_Click(object sender, RoutedEventArgs e)
-        {
-            buttonClickInit(PlayersButton);
-        }
-
-        private void StaffButton_Click(object sender, RoutedEventArgs e)
-        {
-            buttonClickInit(StaffButton);
-        }
-
-        private void AwardsButton_MouseEnter(object sender, MouseEventArgs e)
-        {
-            buttonHoverInit(AwardsButton);
-        }
-
-        private void NationsButton_MouseEnter(object sender, MouseEventArgs e)
-        {
-            buttonHoverInit(NationsButton);
-        }
-
-        private void CitiesButton_MouseEnter(object sender, MouseEventArgs e)
-        {
-            buttonHoverInit(CitiesButton);
-        }
-
-        private void ClubsButton_MouseEnter(object sender, MouseEventArgs e)
-        {
-            buttonHoverInit(ClubsButton);
-        }
-
-        private void CompetitionsButton_MouseEnter(object sender, MouseEventArgs e)
-        {
-            buttonHoverInit(CompetitionsButton);
-        }
-
-        private void PlayersButton_MouseEnter(object sender, MouseEventArgs e)
-        {
-            buttonHoverInit(PlayersButton);
-        }
-
-        private void StaffButton_MouseEnter(object sender, MouseEventArgs e)
-        {
-            buttonHoverInit(StaffButton);
-        }
-
-        private void AwardsButton_MouseLeave(object sender, MouseEventArgs e)
-        {
-            buttonLeavesInit(AwardsButton);
-        }
-
-        private void NationsButton_MouseLeave(object sender, MouseEventArgs e)
-        {
-            buttonLeavesInit(NationsButton);
-        }
-
-        private void CitiesButton_MouseLeave(object sender, MouseEventArgs e)
-        {
-            buttonLeavesInit(CitiesButton);
-        }
-
-        private void ClubsButton_MouseLeave(object sender, MouseEventArgs e)
-        {
-            buttonLeavesInit(ClubsButton);
-        }
-
-        private void CompetitionsButton_MouseLeave(object sender, MouseEventArgs e)
-        {
-            buttonLeavesInit(CompetitionsButton);
-        }
-
-        private void PlayersButton_MouseLeave(object sender, MouseEventArgs e)
-        {
-            buttonLeavesInit(PlayersButton);
-        }
-
-        private void StaffButton_MouseLeave(object sender, MouseEventArgs e)
-        {
-            buttonLeavesInit(StaffButton);
+            if (sender is Button button)
+            {
+                buttonLeavesInit(button);
+            }
         }
 
         private void buttonHoverInit(Button clickedButton)
