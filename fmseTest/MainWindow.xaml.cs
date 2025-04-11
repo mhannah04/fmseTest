@@ -100,6 +100,11 @@ namespace fmseTest
             buttonHoverInit(ClubsButton);
         }
 
+        private void CompetitionsButton_MouseEnter(object sender, MouseEventArgs e)
+        {
+            buttonHoverInit(CompetitionsButton);
+        }
+
         private void PlayersButton_MouseEnter(object sender, MouseEventArgs e)
         {
             buttonHoverInit(PlayersButton);
@@ -110,10 +115,39 @@ namespace fmseTest
             buttonHoverInit(StaffButton);
         }
 
-
         private void AwardsButton_MouseLeave(object sender, MouseEventArgs e)
         {
             buttonLeavesInit(AwardsButton);
+        }
+
+        private void NationsButton_MouseLeave(object sender, MouseEventArgs e)
+        {
+            buttonLeavesInit(NationsButton);
+        }
+
+        private void CitiesButton_MouseLeave(object sender, MouseEventArgs e)
+        {
+            buttonLeavesInit(CitiesButton);
+        }
+
+        private void ClubsButton_MouseLeave(object sender, MouseEventArgs e)
+        {
+            buttonLeavesInit(ClubsButton);
+        }
+
+        private void CompetitionsButton_MouseLeave(object sender, MouseEventArgs e)
+        {
+            buttonLeavesInit(CompetitionsButton);
+        }
+
+        private void PlayersButton_MouseLeave(object sender, MouseEventArgs e)
+        {
+            buttonLeavesInit(PlayersButton);
+        }
+
+        private void StaffButton_MouseLeave(object sender, MouseEventArgs e)
+        {
+            buttonLeavesInit(StaffButton);
         }
 
         private void buttonHoverInit(Button clickedButton)
