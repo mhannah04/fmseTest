@@ -15,7 +15,6 @@ using System.Windows.Shapes;
 
 namespace fmseTest
 {
-
     public partial class MainWindow : Window
     {
         private List<Button> myButtons;
@@ -37,8 +36,6 @@ namespace fmseTest
                 StaffButton
 
             };
-
-
         }
 
         private void FileButton_Click(object sender, RoutedEventArgs e)
@@ -53,6 +50,7 @@ namespace fmseTest
                 buttonClickInit(button);
             }
         }
+
 
         private void MouseEnter(object sender, RoutedEventArgs e)
         {
@@ -70,6 +68,7 @@ namespace fmseTest
             }
         }
 
+
         private void buttonHoverInit(Button clickedButton)
         {
             clickedButton.Foreground = new SolidColorBrush(mouseOverlay);
@@ -78,7 +77,6 @@ namespace fmseTest
         private void buttonLeavesInit(Button clickedButton)
         {
             clickedButton.Foreground = new SolidColorBrush(Colors.Black);
-
         }
 
 

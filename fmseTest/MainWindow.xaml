@@ -11,34 +11,63 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="20"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="20"/>
             <RowDefinition Height="*" />
             <RowDefinition Height="20" />
         </Grid.RowDefinitions>
 
 
 
-        <Border Grid.Row="0" Background="#ffffff" Padding="0,0,0,0">
+        <Border Grid.Row="0" Background="#ffffff" Padding="0" Margin="0">
             <StackPanel Orientation="Horizontal">
                 <Button x:Name="FileButton" Click="FileButton_Click" Content="File" HorizontalAlignment="Left" Width="40" Background="#00753b" Foreground="#ffffff"/>
-                <Button x:Name="AwardsButton" Click="Button_Click" Content="Awards" HorizontalAlignment="Left" Width="60" Background="#ffffff" Foreground="#000000" BorderThickness="0,0,0,0" BorderBrush="#e0e0e0" MouseEnter="MouseEnter" MouseLeave="MouseLeave"/>
-                <Button x:Name="NationsButton" Click="Button_Click" Content="Nations" HorizontalAlignment="Left" Width="60" Background="#ffffff" Foreground="#000000" BorderThickness="0,0,0,0" BorderBrush="#e0e0e0" MouseEnter="MouseEnter" MouseLeave="MouseLeave"/>
-                <Button x:Name="CitiesButton" Click="Button_Click" Content="Cities" HorizontalAlignment="Left" Width="60" Background="#ffffff" Foreground="#000000" BorderThickness="0,0,0,0" BorderBrush="#e0e0e0" MouseEnter="MouseEnter" MouseLeave="MouseLeave"/>
-                <Button x:Name="ClubsButton" Click="Button_Click" Content="Clubs" HorizontalAlignment="Left" Width="60" Background="#ffffff" Foreground="#000000" BorderThickness="0,0,0,0" BorderBrush="#e0e0e0" MouseEnter="MouseEnter" MouseLeave="MouseLeave"/>
-                <Button x:Name="CompetitionsButton" Click="Button_Click" Content="Competitions" HorizontalAlignment="Left" Width="80" Background="#ffffff" Foreground="#000000" BorderThickness="0,0,0,0" BorderBrush="#e0e0e0" MouseEnter="MouseEnter" MouseLeave="MouseLeave"/>
-                <Button x:Name="PlayersButton" Click="Button_Click" Content="Players" HorizontalAlignment="Left" Width="60" Background="#ffffff" Foreground="#000000" BorderThickness="0,0,0,0" BorderBrush="#e0e0e0" MouseEnter="MouseEnter" MouseLeave="MouseLeave"/>
-                <Button x:Name="StaffButton" Click="Button_Click" Content="Staff" HorizontalAlignment="Left" Width="60" Background="#ffffff" Foreground="#000000" BorderThickness="0,0,0,0" BorderBrush="#e0e0e0" MouseEnter="MouseEnter" MouseLeave="MouseLeave"/>
-
-
-
-
-
-
+                <Button x:Name="AwardsButton" Click="Button_Click" Content="Awards" HorizontalAlignment="Left" Width="60" Background="#ffffff" Foreground="#000000" BorderThickness="0" BorderBrush="#e0e0e0" MouseEnter="MouseEnter" MouseLeave="MouseLeave"/>
+                <Button x:Name="NationsButton" Click="Button_Click" Content="Nations" HorizontalAlignment="Left" Width="60" Background="#ffffff" Foreground="#000000" BorderThickness="0" BorderBrush="#e0e0e0" MouseEnter="MouseEnter" MouseLeave="MouseLeave"/>
+                <Button x:Name="CitiesButton" Click="Button_Click" Content="Cities" HorizontalAlignment="Left" Width="60" Background="#ffffff" Foreground="#000000" BorderThickness="0" BorderBrush="#e0e0e0" MouseEnter="MouseEnter" MouseLeave="MouseLeave"/>
+                <Button x:Name="ClubsButton" Click="Button_Click" Content="Clubs" HorizontalAlignment="Left" Width="60" Background="#ffffff" Foreground="#000000" BorderThickness="0" BorderBrush="#e0e0e0" MouseEnter="MouseEnter" MouseLeave="MouseLeave"/>
+                <Button x:Name="CompetitionsButton" Click="Button_Click" Content="Competitions" HorizontalAlignment="Left" Width="80" Background="#ffffff" Foreground="#000000" BorderThickness="0" BorderBrush="#e0e0e0" MouseEnter="MouseEnter" MouseLeave="MouseLeave"/>
+                <Button x:Name="PlayersButton" Click="Button_Click" Content="Players" HorizontalAlignment="Left" Width="60" Background="#ffffff" Foreground="#000000" BorderThickness="0" BorderBrush="#e0e0e0" MouseEnter="MouseEnter" MouseLeave="MouseLeave"/>
+                <Button x:Name="StaffButton" Click="Button_Click" Content="Staff" HorizontalAlignment="Left" Width="60" Background="#ffffff" Foreground="#000000" BorderThickness="0" BorderBrush="#e0e0e0" MouseEnter="MouseEnter" MouseLeave="MouseLeave"/>
             </StackPanel>
         </Border>
 
-        <Border Grid.Row="2" Background="#00753b" Padding="5,0,5,0">
-            <TextBlock Text="Ready" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#ffffff" />
+        <Border Grid.Row="1" Margin="5,0,0,0">
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="FilterButton" Width="40" Height="40" Background="#ffffff" BorderThickness="0" Padding="0">
+                    <Image Source="C:\Users\PC\Pictures\filter_png.png"></Image>
+                </Button>
+                <Rectangle Width="1.5" Height="30" Fill="Black" Margin="5,0,0,0"></Rectangle>
+            </StackPanel>
         </Border>
 
+        <Border Grid.Row="2" Margin="5,0,0,0">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="filterText" Text="Filter" Height="20" Width="50" Foreground="Black" FontSize="15" TextAlignment="Center" HorizontalAlignment="Stretch"/>
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Row="4" Background="#00753b" Padding="5,0,5,0">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Text="Ready" 
+                   Grid.Column="0" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Center" 
+                   Foreground="#ffffff" />
+
+                <TextBlock Text="Placeholder" 
+                   Grid.Column="1" 
+                   HorizontalAlignment="Right" 
+                   VerticalAlignment="Center" 
+                   Foreground="#ffffff"/>
+            </Grid>
+        </Border>
     </Grid>
+    
+    
 </Window>
